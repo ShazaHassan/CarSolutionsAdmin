@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsPage">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetailsPage">
+
+    <ImageView
+        android:id="@+id/car_image_details"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:adjustViewBounds="true"
+        android:scaleType="fitXY"
+        android:src="@drawable/download1" />
+
+    <TextView
+        android:id="@+id/no_img_details"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:paddingTop="75dp"
+        android:text="No Images for this car"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/see_all_images_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="85dp"
+        android:layout_toEndOf="@id/car_image_details"
+        android:layout_toRightOf="@id/car_image_details"
+        android:text="See all Images"
+        android:textColor="@color/design_default_color_primary_dark"
+        android:textSize="16sp"
+        android:onClick="seeAllImages"/>
+
+    <TextView
+        android:id="@+id/modelHeaderDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/car_image_details"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="Model:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/modelDataDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/modelHeaderDetails"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/modelHeaderDetails"
+        android:layout_toRightOf="@id/modelHeaderDetails"
+        android:maxLines="2"
+        android:text="aaa"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/colorHeaderDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modelHeaderDetails"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Color:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/colorDataDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/colorHeaderDetails"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_toEndOf="@id/colorHeaderDetails"
+        android:layout_toRightOf="@id/colorHeaderDetails"
+        android:text="aaa"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/contactHeaderDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colorHeaderDetails"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Contact No:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/contactDataDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/contactHeaderDetails"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/contactHeaderDetails"
+        android:layout_toRightOf="@id/colorHeaderDetails"
+        android:text="aaa"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/importDateHeaderDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactHeaderDetails"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="Import date:"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/importDateDataDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/importDateHeaderDetails"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/importDateHeaderDetails"
+        android:layout_toRightOf="@id/importDateHeaderDetails"
+        android:text="aaa"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/chachissHeaderDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/importDateHeaderDetails"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="Chachiss No:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/chachissDataDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/chachissHeaderDetails"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/chachissHeaderDetails"
+        android:layout_toRightOf="@id/chachissHeaderDetails"
+        android:text="aaa"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/moreDetailsDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chachissHeaderDetails"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:text="More Details:"
+        android:textColor="#000"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/moreDetailsDataDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/moreDetailsDetails"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_toEndOf="@id/moreDetailsDetails"
+        android:layout_toRightOf="@id/moreDetailsDetails"
+        android:text="aaa"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/availableDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:text="aaa"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="26sp"
+        android:layout_below="@+id/moreDetailsDataDetails"
+        android:layout_centerHorizontal="true"/>
+
+
+
+
+</RelativeLayout>
+</ScrollView>

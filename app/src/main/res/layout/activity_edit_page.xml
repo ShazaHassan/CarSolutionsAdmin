@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"    tools:context=".EditPage"
+    >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/model_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Model:"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@id/model_edit_text_edit"/>
+
+    <EditText
+        android:id="@+id/model_edit_text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/model_text_view"
+        android:layout_toRightOf="@id/model_text_view" />
+
+    <TextView
+        android:id="@+id/color_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/model_edit_text_edit"
+        android:layout_marginTop="8dp"
+        android:text="Color:"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@id/color_edit_text_edit" />
+
+    <EditText
+        android:id="@+id/color_edit_text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/model_edit_text_edit"
+        android:layout_toEndOf="@id/color_text_view"
+        android:layout_toRightOf="@id/color_text_view"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/chachiss_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/color_edit_text_edit"
+        android:layout_marginTop="8dp"
+        android:text="Chachiss No:"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@id/chachiss_edit_text_edit"/>
+
+    <EditText
+        android:id="@+id/chachiss_edit_text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/color_edit_text_edit"
+        android:layout_toEndOf="@id/chachiss_text_view"
+        android:layout_toRightOf="@id/chachiss_text_view"
+        android:layout_marginTop="8dp"/>
+
+    <TextView
+        android:id="@+id/contact_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chachiss_edit_text_edit"
+        android:layout_marginTop="8dp"
+        android:text="Contact no:"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@id/contact_edit_text_edit"/>
+
+    <EditText
+        android:id="@+id/contact_edit_text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/chachiss_edit_text_edit"
+        android:layout_toEndOf="@id/contact_text_view"
+        android:layout_marginTop="8dp"
+        android:layout_toRightOf="@id/contact_text_view" />
+
+    <TextView
+        android:id="@+id/import_data_text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/contact_edit_text_edit"
+        android:layout_marginTop="8dp"
+        android:text="Import date:"
+        android:textSize="18sp"
+        android:layout_alignBaseline="@id/import_data_edit_text"/>
+
+    <EditText
+        android:id="@+id/import_data_edit_text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contact_edit_text_edit"
+        android:layout_marginTop="8dp"
+        android:layout_toEndOf="@id/import_data_text_view"
+        android:layout_toRightOf="@id/import_data_text_view" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/import_data_edit_text_edit"
+        android:layout_marginTop="8dp"
+        android:text="More Details:"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/details_edit_text_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/details"
+        android:inputType="textMultiLine" />
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/details_edit_text_edit"
+        android:id="@+id/relative">
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/checkAvailability"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/checkAvailability"
+        android:layout_toRightOf="@+id/checkAvailability"
+        android:textSize="18sp"
+        android:text="Available"
+        android:layout_alignBaseline="@id/checkAvailability"/>
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/saveChanges"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/relative"
+        android:layout_alignParentBottom="true"
+        android:onClick="saveChanges"
+        android:text="Save Changes"
+        android:textAllCaps="false"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="8dp"/>
+
+
+</RelativeLayout>
+</ScrollView>

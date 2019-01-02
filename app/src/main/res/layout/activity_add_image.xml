@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?><!--<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"--><!--xmlns:app="http://schemas.android.com/apk/res-auto"--><!--xmlns:tools="http://schemas.android.com/tools"--><!--android:layout_width="match_parent"--><!--android:layout_height="match_parent"--><!--tools:context=".AddImage">-->
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    tools:context=".AddImage">
+
+
+    <ListView
+        android:id="@+id/list_view_from_cam"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <LinearLayout
+        android:id="@+id/relative_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent">
+
+        <Button
+            android:id="@+id/take_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:onClick="takePhoto"
+            android:text="take Photo"
+            android:textAllCaps="false" />
+
+        <Button
+            android:id="@+id/gallery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_toEndOf="@id/take_image"
+            android:layout_toRightOf="@id/take_image"
+            android:layout_weight="1"
+            android:onClick="uploadImage"
+            android:text="Gallery"
+            android:textAllCaps="false"
+            app:layout_constraintStart_toEndOf="@id/take_image" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_toEndOf="@id/gallery"
+            android:layout_toRightOf="@id/gallery"
+            android:layout_weight="1"
+            android:text="Save Data"
+            android:textAllCaps="false"
+            android:onClick="saveImage"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout><!--</ScrollView>-->

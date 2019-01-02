@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/car_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="10dp"
+        android:maxWidth="1500dp"
+        android:maxHeight="150dp"
+        android:minWidth="150dp"
+        android:minHeight="150dp"
+        android:scaleType="fitXY"
+        android:adjustViewBounds="true"
+        android:src="@drawable/download1"/>
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_margin="10dp"
+        android:text="No Images for this car"
+        android:textSize="18sp"
+        android:textColor="#000"
+        android:textAlignment="center"
+        android:paddingTop="50dp"
+        android:id="@+id/no_img"/>
+
+    <!--<TextView-->
+        <!--android:id="@+id/see_all_images"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginStart="10dp"-->
+        <!--android:layout_marginLeft="10dp"-->
+        <!--android:layout_marginTop="80dp"-->
+        <!--android:layout_toEndOf="@id/car_image"-->
+        <!--android:layout_toRightOf="@id/car_image"-->
+        <!--android:text="See all Images" />-->
+
+    <TextView
+        android:id="@+id/modelHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/car_image"
+        android:layout_marginStart="10dp"
+        android:text="Model:"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_toRightOf="@id/car_image"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:id="@+id/modelData"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/modelHeader"
+        android:layout_toEndOf="@id/modelHeader"
+        android:layout_toRightOf="@id/modelHeader"
+        android:text="aaa"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:textSize="18sp"
+        android:maxLines="2"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/colorHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/modelHeader"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:text="Color:"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_toEndOf="@id/car_image"
+        android:layout_toRightOf="@id/car_image"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@id/colorHeader"
+        android:id="@+id/colorData"
+        android:layout_toEndOf="@id/colorHeader"
+        android:layout_toRightOf="@id/colorHeader"
+        android:textSize="18sp"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:text="aaa"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp" />
+
+    <TextView
+        android:id="@+id/contactHeader"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/colorHeader"
+        android:layout_marginStart="10dp"
+        android:text="Contact No:"
+        android:textColor="#000"
+        android:textSize="20sp"
+        android:layout_toEndOf="@id/car_image"
+        android:layout_toRightOf="@id/car_image"
+        android:layout_marginLeft="10dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/contactHeader"
+        android:id="@+id/contactData"
+        android:layout_toEndOf="@id/car_image"
+        android:textSize="18sp"
+        android:textColor="@color/common_google_signin_btn_text_light_default"
+        android:text="aaa"
+        android:layout_marginStart="10dp"
+        android:layout_toRightOf="@id/car_image"
+        android:layout_marginLeft="10dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginRight="5dp" />
+
+
+</RelativeLayout>
